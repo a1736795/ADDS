@@ -6,11 +6,6 @@ using namespace std;
 #ifndef _BOOK_H_
 #define _BOOK_H_
 
-//enum for genres
-enum class Genre
-{
-   fiction, nonfiction, biography, children
-};
 
 //class Book
 class Book
@@ -38,7 +33,6 @@ public:
 
 private:
    //m_ prefix to denote member variable
-   Genre m_genre;
    string m_isbn, m_title, m_author;
    int m_date;
    bool m_checkedOut;
