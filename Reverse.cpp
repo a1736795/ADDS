@@ -1,28 +1,31 @@
 #include "Reverse.h"
 
-string Reverse::reverseString(string str1)
+string Reverse::reverseString(string str)
 {
-    size_t number_characters= str1.size();
+    size_t number_characters= str.size();
     if(number_characters== 1)
     {
-        return str1;
+        return str;
     }
     else
     {
-        return str1[number_characters- 1]+reverseString(str1.substr(0, number_characters- 1));
+        return str[number_characters- 1]+reverseString(str.substr(0, number_characters- 1));
     }
 
 }
-int Reverse::reverseDigit(int val)
+int Reverse::reverseDigit(int v)
 {
-    if(val<10)
+    if(v<0)
     {
-        return val;
+        return -1;
     }
-    int length=0;
-    for (int i=val; i; i/=10)
+    static int newNumber = 0;
+    static int multiplier = 1;
+    if(v>0)
     {
-        length++;
+        reverseDigit(v/10);
+        newNumber += (v%10)*multiplier;
+        multiplier*=10;
     }
-    return val%10*(int)pow(10,length-1)+reverseDigit(val/10);
+    return newNumber;
 }
