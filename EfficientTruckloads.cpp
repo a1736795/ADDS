@@ -8,7 +8,7 @@ int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
         return 1;
     }
     
-    if(numCratesArray[numCrates]!=0)
+    if(numCratesArray[numCrates]>0)
     {
         return numCratesArray[numCrates];
     }
