@@ -1,5 +1,4 @@
 #include "EfficientTruckloads.h"
-#include<iostream>
 
 int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
 {

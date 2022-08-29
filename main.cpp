@@ -11,28 +11,33 @@ int main()
     EfficientTruckloads t;
     
     string s1;
-    int i,sa;
-    cin>>i>>s1;
-    
-    int crate, loadsize;
-    cout<<"Enter crates: ";
-    cin>>crate;
-    cout<<"Enter load size: ";
-    cin>>loadsize;
-    if(crate<=0||loadsize<=0)
+    int i,sa,crate,loadsize;
+    cin>>i>>s1>>crate>>loadsize;
+
+    if(i<0)
     {
-        cout<<"ERROR";
+    cout<<"ERROR"<<" ";
+    }
+    else
+    cout<<rev.reverseDigit(i)<<" ";
+    cout<<rev.reverseString(s1)<<" ";
+
+    if(crate<=0||crate>10000)
+    {
+        cout<<"ERROR ";
+    }
+    else
+    {
+    cout<<tl.numTrucks(crate,loadsize)<<" ";
+    }
+    
+    if(crate<=0||crate>10000)
+    {
+        cout<<"ERROR ";
     }
     else
     {
     cout<<t.numTrucks(crate,loadsize)<<" ";
     }
-   
-    if(i<0)
-    cout<<"ERROR"<<" ";
-    else
-    cout<<rev.reverseDigit(i)<<" ";
-    cout<<rev.reverseString(s1)<<" ";
-
     return 0;
 }
