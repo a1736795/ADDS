@@ -24,19 +24,11 @@ int main()
 
     if(crate<=0||crate>10000)
     {
-        cout<<"ERROR ";
+        cout<<"ERROR";
     }
     else
     {
     cout<<tl.numTrucks(crate,loadsize)<<" ";
-    }
-    
-    if(crate<=0||crate>10000)
-    {
-        cout<<"ERROR ";
-    }
-    else
-    {
     cout<<t.numTrucks(crate,loadsize)<<" ";
     }
     return 0;
