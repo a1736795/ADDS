@@ -1,10 +1,12 @@
 #include "EfficientTruckloads.h"
+#include<iostream>
 
 int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
 {
+    
     if(numCrates<=loadSize)
     {
-        return 1;
+        return 0;
     }
     
     if(numCratesArray[numCrates]!=0)

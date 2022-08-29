@@ -18,6 +18,9 @@ int main()
     else
     cout<<rev.reverseDigit(i)<<" ";
     cout<<rev.reverseString(s1)<<" ";
-
+    if (num1 < 0 || num2 < 0) 
+    {
+        cout << "error" <<" ";
+    }
     return 0;
 }
