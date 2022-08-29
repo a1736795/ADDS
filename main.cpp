@@ -11,16 +11,23 @@ int main()
     EfficientTruckloads t;
     
     string s1;
-    int i,num1,num2,sa;
-    cin>>i>>s1>>num1>>num2;
-    if (num1 < 0 || num2 < 0) 
+    int i,sa;
+    cin>>i>>s1;
+    
+    int crate, loadsize;
+    cout<<"Enter crates: ";
+    cin>>crate;
+    cout<<"Enter load size: ";
+    cin>>loadsize;
+    if(crate<=0||loadsize<=0)
     {
-    cout<<"ERROR"<<" ";
+        cout<<"ERROR";
     }
     else
     {
-    cout<<t.numTrucks(num1,num2)<<" ";
+    cout<<t.numTrucks(crate,loadsize)<<" ";
     }
+   
     if(i<0)
     cout<<"ERROR"<<" ";
     else
