@@ -7,6 +7,8 @@ int EfficientTruckloads::efficient_Truckloads_Num(int numCrates, int loadSize)
     {
         return 1;
     }
+    while(numCrates>0&&loadSize>0)
+    {
     if(numCratesArray[numCrates]!=0)
     {
         return numCratesArray[numCrates];
@@ -22,5 +24,6 @@ int EfficientTruckloads::efficient_Truckloads_Num(int numCrates, int loadSize)
             numCratesArray[numCrates] = efficient_Truckloads_Num(numCrates/2,loadSize) + efficient_Truckloads_Num((numCrates/2)+1,loadSize);
             return numCratesArray[numCrates];
         }
+    }
     }
 }
