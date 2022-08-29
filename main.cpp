@@ -6,19 +6,18 @@ using namespace std;
 
 int main()
 {
-    int crates;
-    int loadsize;
-
-    cout<<"Enter the number of crates";
-    cin>>crates;
-
-    cout<<"Enter the load size: ";
-    cin>>loadsize;
-
+    Reverse rev;
+    Truckloads tl;
     EfficientTruckloads t;
-    int numOfTrucks=t.efficient_Truckloads_Num(crates,loadsize);
-
-    cout<<"The number of Trucks required are: "<<numOfTrucks<<endl;
+    
+    string s1;
+    int i,num1,num2,sa;
+    cin >> i>>s1>>num1>>num2;
+    if(i<0)
+    cout<<"ERROR"<<" ";
+    else
+    cout<<rev.reverseDigit(i)<<" ";
+    cout<<rev.reverseString(s1)<<" ";
 
     return 0;
 }
