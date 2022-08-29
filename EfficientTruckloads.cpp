@@ -1,6 +1,6 @@
 #include "EfficientTruckloads.h"
 
-int EfficientTruckloads::efficient_Truckloads_Num(int numCrates, int loadSize)
+int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
 {
     if(numCrates<=loadSize)
     {
@@ -15,11 +15,11 @@ int EfficientTruckloads::efficient_Truckloads_Num(int numCrates, int loadSize)
     {
         if(numCrates%2==0)
         {
-            numCratesArray[numCrates] = efficient_Truckloads_Num(numCrates/2,loadSize) + efficient_Truckloads_Num(numCrates/2,loadSize);
+            numCratesArray[numCrates] = numTrucks(numCrates/2,loadSize) + numTrucks(numCrates/2,loadSize);
             return numCratesArray[numCrates];
         }else
         {
-            numCratesArray[numCrates] = efficient_Truckloads_Num(numCrates/2,loadSize) + efficient_Truckloads_Num((numCrates/2)+1,loadSize);
+            numCratesArray[numCrates] = numTrucks(numCrates/2,loadSize) + numTrucks((numCrates/2)+1,loadSize);
             return numCratesArray[numCrates];
         }
     }
