@@ -5,8 +5,18 @@ using namespace std;
 int main()
 {
     EfficientTruckloads t;
-    int crate = -1, loadsize=3;
-
+    int crate, loadsize;
+    cout<<"Enter crates: ";
+    cin>>crate;
+    cout<<"Enter load size: ";
+    cin>>loadsize;
+    if(crate<=0||loadsize<=0)
+    {
+        cout<<"ERROR";
+    }
+    else
+    {
     cout<<t.numTrucks(crate,loadsize)<<" ";
+    }
     return 0;
 }

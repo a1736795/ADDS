@@ -12,9 +12,15 @@ int main()
     
     string s1;
     int i,num1,num2,sa;
-    cin >> i>>s1>>num1>>num2;
+    cin>>i>>s1>>num1>>num2;
     if (num1 < 0 || num2 < 0) 
+    {
     cout<<"ERROR"<<" ";
+    }
+    else
+    {
+    cout<<t.numTrucks(num1,num2)<<" ";
+    }
     if(i<0)
     cout<<"ERROR"<<" ";
     else
