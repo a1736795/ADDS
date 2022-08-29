@@ -1,5 +1,4 @@
 #include "EfficientTruckloads.h"
-using namespace std;
 
 int EfficientTruckloads::efficient_Truckloads_Num(int numCrates, int loadSize)
 {
