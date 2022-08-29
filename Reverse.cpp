@@ -29,12 +29,3 @@ int Reverse::reverseDigit(int v)
     }
     return newNumber;
 }
-
-void Reverse::reserveStringUtil(string s, int pos, char ps[])
-{
-    if(s[pos]=='\0')
-        return;
-    reserveStringUtil(s,pos+1,ps);
-    int index = s.length()-pos-1;
-    ps[index]=s[pos];
-}
