@@ -8,6 +8,7 @@
 class Mutator 
 {
 public:
-virtual Individual* mutate(Individual* list, int k)=0;
+    virtual Individual* mutate(Individual* list, int k)=0;
 };
+
 #endif
