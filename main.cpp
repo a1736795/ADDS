@@ -28,11 +28,11 @@ int main()
     int found = mybin.bSearch(inputs, 0, 0, inputs.size() - 1);
     if (found >= 0)
     {
-        cout << "true";
+        cout << "false";
     }
     else
     {
-        cout << "false";
+        cout << "true";
     }
 
     for(unsigned int i = 0; i < inputs.size(); i++)
