@@ -3,21 +3,16 @@
 
 using namespace std;
 
-BubbleSort::BubbleSort()
-{
-
-}
-
-void BubbleSort::exec(vector<int> &toSort)
+std::vector<int> sort(std::vector<int> list)
 {
     bool wasSwap = 0;
-    for (unsigned int i = 0; i < toSort.size(); i++)
+    for (unsigned int i = 0; i < list.size(); i++)
     {
-        for (unsigned int j = 0; j < toSort.size()-1; j++)
+        for (unsigned int j = 0; j < list.size()-1; j++)
         {
-            if(toSort.at(j) > toSort.at(j+1)) 
+            if(list.at(j) > list.at(j+1)) 
             {
-                swap(toSort.at(j), toSort.at(j+1));
+                swap(list.at(j), list.at(j+1));
                 wasSwap = 1;
             }
         }
@@ -26,4 +21,5 @@ void BubbleSort::exec(vector<int> &toSort)
             break;
         }
     }
+    return list;
 }

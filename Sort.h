@@ -7,9 +7,8 @@ class Sort
 public:
     Sort();
     ~Sort() {};
-    virtual void exec() {};
+    virtual std::vector<int> sort(std::vector<int> list);
     void swap(int&, int&);
-    std::vector<int> sort(std::vector<int> list);
 
 private:
 

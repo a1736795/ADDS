@@ -8,9 +8,10 @@
 class BubbleSort: public Sort
 {
 public:
+    
     BubbleSort();
     ~BubbleSort() {};
-    void exec(std::vector<int> &toSort);
+    virtual std::vector<int> sort(std::vector<int> list);
 private:
 
 };

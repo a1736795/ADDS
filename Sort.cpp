@@ -1,15 +1,13 @@
+#include<vector>
 #include "Sort.h"
 
 using namespace std;
 
-Sort::Sort()
+std::vector<int> sort(std::vector<int> list)
 {
-
-}
-
-void Sort::swap(int &a, int &b)
-{
-int temp = a;
-a = b;
-b = temp;
+    int temp, a, b;
+    temp = a;
+    a = b;
+    b = temp;
+    return list;
 }
