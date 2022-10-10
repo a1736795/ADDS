@@ -15,13 +15,13 @@ void BubbleSort::exec(vector<int> &toSort)
     {
         for (unsigned int j = 0; j < toSort.size()-1; j++)
         {
-            if(toSort.at(j) > toSort.at(j+1)) // Compare the pair and swap if necessary
+            if(toSort.at(j) > toSort.at(j+1)) 
             {
                 swap(toSort.at(j), toSort.at(j+1));
                 wasSwap = 1;
             }
         }
-        if( !wasSwap ) // If there is no swap, then the list is in order
+        if( !wasSwap ) 
         {
             break;
         }

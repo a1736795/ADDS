@@ -1,3 +1,4 @@
+#include<vector>
 #ifndef SORT_H
 #define SORT_H
 
@@ -8,6 +9,8 @@ public:
     ~Sort() {};
     virtual void exec() {};
     void swap(int&, int&);
+    std::vector<int> sort(std::vector<int> list);
+
 private:
 
 };
