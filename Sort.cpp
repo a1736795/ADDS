@@ -3,11 +3,14 @@
 
 using namespace std;
 
-std::vector<int> sort(std::vector<int> list)
+Sort::Sort()
 {
-    int temp, a, b;
-    temp = a;
-    a = b;
-    b = temp;
-    return list;
+
+}
+
+void Sort::swap(int &a, int &b)
+{
+int temp = a;
+a = b;
+b = temp;
 }
