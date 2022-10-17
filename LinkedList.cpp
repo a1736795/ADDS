@@ -13,10 +13,9 @@ bool list::isEmpty()
 
 void list::addFront(int data)
 {
-    node *temp;
-    node *N=new node(data);
-    N->setNext(head);
-    head=N;
+    node *temp=new node(data);
+    temp->setNext(head);
+    head=temp;
 }
 
 void list::addEnd(int data)
