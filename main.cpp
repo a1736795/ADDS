@@ -19,7 +19,7 @@ bool isOp(char x)
 
 int eval(signed int operand1,signed int operand2,char exp) 
 {
-    int val;
+    int val = true;
     if(exp=='+')
         val=operand1+operand2;
     else if(exp=='-')
@@ -93,7 +93,7 @@ string prefixToInfix(string prefix_str)
 int main() 
 {
     string prefix_str;
-    cout<<"enter a prefix expression:"<<endl;
+    cout<<"Inputs:"<<endl;
     cin>>prefix_str;
     cout << prefixToInfix(prefix_str);
     return 0;
